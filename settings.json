@@ -1,0 +1,51 @@
+{
+    "git.ignoreLegacyWarning": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.openRepositoryInParentFolders": "never",
+    "customWindowZoom.zoomLevelChangeValue": 0.25,
+    "workbench.settings.applyToAllProfiles": [
+        "customWindowZoom.zoomLevelChangeValue"
+    ],
+    "window.zoomLevel": -1,
+    "cmake.configureOnOpen": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive":[
+        // NAVIGATION
+        // switch b/w buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] }, 
+        // splits
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+        // panes
+        {
+        "before": ["leader", "h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+        "before": ["leader", "j"],
+        "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+        "before": ["leader", "k"],
+        "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+        "before": ["leader", "l"],
+        "commands": ["workbench.action.focusRightGroup"]
+        },
+        // NICE TO HAVE
+        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+
+    ],
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "editor.fontFamily": "JetBrains Mono",
+    "workbench.colorTheme": "Rosé Pine (no italics)",
+    "workbench.activityBar.location": "top",
+    "window.menuBarVisibility": "compact"
+}
